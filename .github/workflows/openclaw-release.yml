@@ -62,7 +62,7 @@ jobs:
             OPENCLAW_INSTALL_BROWSER=true
             OPENCLAW_VERSION=${{ github.event.inputs.openclawTag }}
           tags: |
-            1panel/openclaw:${{ github.event.inputs.dockerhubTag || github.event.inputs.openclawTag }}
+            guoyinglong/openclaw:${{ github.event.inputs.dockerhubTag || github.event.inputs.openclawTag }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
@@ -78,6 +78,6 @@ jobs:
             OPENCLAW_INSTALL_BROWSER=true
             OPENCLAW_VERSION=${{ github.event.inputs.openclawTag }}
           tags: |
-            1panel/openclaw:latest
+            guoyinglong/openclaw:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
